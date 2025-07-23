@@ -22,7 +22,7 @@ const [citycountry, setCountry] = useState(cityData)
     setCity(name)
   }
   function handleChange(e){
-    citycountry.includes(e.target.value)?
+    citycountry.includes((e.target.value).toLowerCase())?
     document.getElementById("button").disabled = false
     :
     document.getElementById('button').disabled = true
